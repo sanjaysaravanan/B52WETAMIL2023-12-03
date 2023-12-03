@@ -19,20 +19,39 @@ Topics:
     
     Copy Public URL and Submit in the Task Submitions
 
+      navigate proper url:
+        example:
+          sample:
+            -> sample.html
+            -> index.html
+            -> task2.html
+          Details.txt
+          readme.md
+      <public-url>/sample.html
+      https://aesthetic-kelpie-fb2951.netlify.app/sample.html ( sample UI )
+      https://aesthetic-kelpie-fb2951.netlify.app/index.html ( index UI )
+      https://aesthetic-kelpie-fb2951.netlify.app/task2.html ( task2 UI )
+
   Window - Common Utilities
 
-    prompt - prompts an input from the user
-
     alert - simple message to the user
+
+    prompt - prompts an input from the user
 
     confirm - confirm the course of action ( true or false )
 
     setTimeout --> executes a set of codes after a sometime ( in ms )
+      return the timeout-id
 
-    setInterval --> execute a set of codes for a frequency of interval
+      this id can be used to clear the timeout using clearTimeout function`
+    
+    setInterval --> execute a set of codes for a frequently after an interval
+      returns the interval id of the setInterval
+
+      this id can be used to clear the interval using clearInterval function
+
   
   Events:
-    classlist toggle
 
     addEventListner:
       click --> div, button
@@ -41,20 +60,35 @@ Topics:
       mouseleave --> any
       change --> input
       submit --> form
+      keyboard events --> 
 
-    removeEventListener -- events can only be removed with named callback function & addeventlistner should also have the named callback function
+      event object --> argument for the callback function
 
-    options in eventListener:
-      once: boolean value to tell whether event should execute only once
+Task: (mandatory to complete any 2)
 
-    2. Concepts in events
+Mostly use the DOM Manipulation concepts
 
-      1. Propagation --> events propagate through inner <-> outer between related elements
-
-      Way of Propagation:
-        1. Default - Bubbling (inner to outer or child to parent) ---> propagation of events from innerMost child to outermost parent 
-        2. Capturing (outer to inner) ---> event progation of events from outermost parent to innermost child
-
-        stopProgation func for an event:
+Pagination
+https://docs.google.com/document/d/1O8yVCwB_GaY5rZK1_mNkZ9GeYJLeom_dYmcVN3Mb2ws/edit
+calculator 
+https://docs.google.com/document/d/1VyZJG0KZAoZEs3h_lpP65XPekNqsbFp8bouOZSWsOTc/edit
+HTML Forms
+https://docs.google.com/document/d/1I8qIE7_ri5Q_1QqkxJ7rdlRmGnWWW7zCa7BXrwAi8hI/edit"
 
 
+Next Session:
+
+  removeEventListener -- events can only be removed with named callback function & addeventlistner should also have the named callback function
+
+  options in eventListener:
+    once: boolean value to tell whether event should execute only once
+
+  2. Concepts in events
+
+    1. Propagation --> events propagate through inner <-> outer between related elements
+
+    Way of Propagation:
+      1. Default - Bubbling (inner to outer or child to parent) ---> propagation of events from innerMost child to outermost parent 
+      2. Capturing (outer to inner) ---> event progation of events from outermost parent to innermost child
+
+      stopProgation func for an event:

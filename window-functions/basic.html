@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showAlert()">Click Me To Alert</button>
+    <button onclick="promptAge()">Click Me to Prompt</button>
+    <button onclick="confirmResidence()">Click Me to Confirm</button>
+    <div id="container"></div>
+    <div id="container-two"></div>
+
+    <script>
+      const showAlert = () => {
+        alert("Hi Hello");
+      };
+
+      const divElement = document.getElementById("container");
+      const divTwo = document.getElementById("container-two");
+
+      const promptAge = () => {
+        const age = prompt("Enter Your Age:");
+        console.log(age);
+        divElement.innerHTML = "";
+        // divElement.innerHTML = `<h1>${age}</h1>`;
+        const h1Element = document.createElement("h1");
+        h1Element.innerText = age;
+        divElement.appendChild(h1Element);
+      };
+
+      const confirmResidence = () => {
+        const isIndian = confirm("Are You an Indian?");
+        console.log(isIndian);
+        divTwo.innerHTML = "";
+        // divTwo.innerHTML = `<h1>${age}</h1>`;
+        const h1Element = document.createElement("h1");
+        h1Element.innerText = `Indian: ${isIndian.toString()}`;
+        divTwo.appendChild(h1Element);
+      };
+    </script>
+  </body>
+</html>

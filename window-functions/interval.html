@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Seconds: <b>0</b></p>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+    <script>
+      let intervalId = null;
+      let count = 0;
+
+      const stopTimer = () => {
+        clearInterval(intervalId);
+      };
+
+      const resetTimer = () => {
+        count = 0;
+        document.querySelector("b").innerHTML = count;
+      };
+
+      const startTimer = () => {
+        intervalId = setInterval(() => {
+          console.log("Hi Hello!");
+          count++;
+          document.querySelector("b").innerHTML = count;
+        }, 3000);
+      };
+      startTimer();
+    </script>
+  </body>
+</html>

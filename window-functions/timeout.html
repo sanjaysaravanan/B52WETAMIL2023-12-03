@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+
+    <button onclick="stopTimeout()">Clear Timeout</button>
+    <script>
+      let timeoutId = null;
+      // setTimeout --> a function to execute a set of statments after certain milliseconds
+      // 1 second === 1000 milliseconds
+      timeoutId = setTimeout(() => {
+        console.log("Happy Diwali!!!!!!!");
+        document.querySelector("h1").innerHTML = "Happy Diwali!!!!";
+      }, 5000);
+      // clearTimeout(timeoutId);
+
+      const stopTimeout = () => {
+        clearTimeout(timeoutId);
+      };
+
+      // console.log("id: ", timeoutId);
+    </script>
+  </body>
+</html>
