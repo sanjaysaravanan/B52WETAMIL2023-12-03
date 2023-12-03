@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information Form</title>
+  </head>
+  <body>
+    <h2>User Information Form</h2>
+
+    <form action="submit_form.php" method="post">
+      <!-- Name -->
+
+      <div style="display: flex">
+        <div style="margin: 16px">
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="name">Name</label>
+          <br />
+        </div>
+        <div style="margin: 16px">
+          <input type="number" id="age" name="age" required />
+          <br />
+          <label for="age">Age</label>
+          <br />
+        </div>
+      </div>
+
+      <!-- Age -->
+
+      <!-- Date of Birth (DOB) -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
